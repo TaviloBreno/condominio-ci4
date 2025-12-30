@@ -12,6 +12,14 @@ use CodeIgniter\Filters\InvalidChars;
 use CodeIgniter\Filters\PageCache;
 use CodeIgniter\Filters\PerformanceMetrics;
 use CodeIgniter\Filters\SecureHeaders;
+use CodeIgniter\Shield\Filters\SessionAuth;
+use CodeIgniter\Shield\Filters\TokenAuth;
+use CodeIgniter\Shield\Filters\HmacAuth;
+use CodeIgniter\Shield\Filters\ChainAuth;
+use CodeIgniter\Shield\Filters\AuthRates;
+use CodeIgniter\Shield\Filters\GroupFilter;
+use CodeIgniter\Shield\Filters\PermissionFilter;
+use CodeIgniter\Shield\Filters\ForcePasswordResetFilter;
 
 class Filters extends BaseFilters
 {
@@ -34,6 +42,15 @@ class Filters extends BaseFilters
         'forcehttps'    => ForceHTTPS::class,
         'pagecache'     => PageCache::class,
         'performance'   => PerformanceMetrics::class,
+        // Shield Filters
+        'session'       => SessionAuth::class,
+        'tokens'        => TokenAuth::class,
+        'hmac'          => HmacAuth::class,
+        'chain'         => ChainAuth::class,
+        'auth-rates'    => AuthRates::class,
+        'group'         => GroupFilter::class,
+        'permission'    => PermissionFilter::class,
+        'force-reset'   => ForcePasswordResetFilter::class,
     ];
 
     /**
@@ -75,6 +92,12 @@ class Filters extends BaseFilters
             // 'honeypot',
             // 'csrf',
             // 'invalidchars',
+            'session' => ['except' => [
+                'login',
+                'register',
+                'auth/a/*',
+                'logout',
+            ]],
         ],
         'after' => [
             // 'honeypot',
