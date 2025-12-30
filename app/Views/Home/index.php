@@ -22,7 +22,7 @@
           </div>
           <div class="col-4 text-end">
             <div class="icon icon-shape bg-gradient-primary shadow text-center border-radius-md">
-              <i class="fas fa-users text-lg opacity-10" aria-hidden="true"></i>
+              <i class="ni ni-single-02 text-lg opacity-10" aria-hidden="true"></i>
             </div>
           </div>
         </div>
@@ -43,7 +43,7 @@
           </div>
           <div class="col-4 text-end">
             <div class="icon icon-shape bg-gradient-success shadow text-center border-radius-md">
-              <i class="fas fa-building text-lg opacity-10" aria-hidden="true"></i>
+              <i class="ni ni-building text-lg opacity-10" aria-hidden="true"></i>
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@
           </div>
           <div class="col-4 text-end">
             <div class="icon icon-shape bg-gradient-warning shadow text-center border-radius-md">
-              <i class="fas fa-exclamation-triangle text-lg opacity-10" aria-hidden="true"></i>
+              <i class="ni ni-bell-55 text-lg opacity-10" aria-hidden="true"></i>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@
           </div>
           <div class="col-4 text-end">
             <div class="icon icon-shape bg-gradient-info shadow text-center border-radius-md">
-              <i class="fas fa-calendar-check text-lg opacity-10" aria-hidden="true"></i>
+              <i class="ni ni-calendar-grid-58 text-lg opacity-10" aria-hidden="true"></i>
             </div>
           </div>
         </div>
@@ -170,7 +170,7 @@
           <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
             <div class="d-flex align-items-center">
               <div class="icon icon-shape icon-sm me-3 bg-gradient-primary shadow text-center">
-                <i class="fas fa-swimming-pool text-white opacity-10"></i>
+                <i class="ni ni-satisfied text-white opacity-10"></i>
               </div>
               <div class="d-flex flex-column">
                 <h6 class="mb-1 text-dark text-sm">Churrasqueira</h6>
@@ -184,7 +184,7 @@
           <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
             <div class="d-flex align-items-center">
               <div class="icon icon-shape icon-sm me-3 bg-gradient-success shadow text-center">
-                <i class="fas fa-futbol text-white opacity-10"></i>
+                <i class="ni ni-diamond text-white opacity-10"></i>
               </div>
               <div class="d-flex flex-column">
                 <h6 class="mb-1 text-dark text-sm">Salão de Festas</h6>
@@ -198,7 +198,7 @@
           <li class="list-group-item border-0 d-flex justify-content-between ps-0 border-radius-lg">
             <div class="d-flex align-items-center">
               <div class="icon icon-shape icon-sm me-3 bg-gradient-info shadow text-center">
-                <i class="fas fa-gamepad text-white opacity-10"></i>
+                <i class="ni ni-controller text-white opacity-10"></i>
               </div>
               <div class="d-flex flex-column">
                 <h6 class="mb-1 text-dark text-sm">Quadra Esportiva</h6>

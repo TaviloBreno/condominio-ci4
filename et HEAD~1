@@ -1,0 +1,158 @@
+[33mcommit 17013ee03f09e936a95bbd1aa875c5895eae4128[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Tavilo Breno <breno_wk2@hotmail.com>
+Date:   Tue Dec 30 01:10:48 2025 -0300
+
+    Add new SCSS variable files for various components and utilities
+    
+    - Created _choices.scss for dropdown choices styling variables.
+    - Added _dropdowns.scss for dropdown menu variables including transitions and transforms.
+    - Introduced _fixed-plugin.scss for fixed plugin positioning and styling variables.
+    - Implemented _form-switch.scss for slider switch dimensions and positioning.
+    - Added _full-calendar.scss for calendar event styling variables.
+    - Created _header.scss for page header layout and styling variables.
+    - Introduced _info-areas.scss for icon and info area styling variables.
+    - Added _misc-extend.scss for additional styling variables including text borders and header shapes.
+    - Created _misc.scss for various utility variables including gradients and tooltips.
+    - Introduced _navbar-vertical.scss for vertical navbar styling variables.
+    - Added _navbar.scss for navbar toggler icon styling variables.
+    - Created _pagination.scss for pagination component styling variables.
+    - Introduced _rtl.scss for right-to-left layout adjustments.
+    - Added _social-buttons.scss for social media button color variables.
+    - Created _table.scss for table styling variables including head and body styles.
+    - Introduced _timeline.scss for timeline component styling variables.
+    - Added _utilities-extend.scss for additional utility variables including shadows and card transitions.
+    - Created _utilities.scss for comprehensive utility variables including spacing and sizing.
+    - Introduced _virtual-reality.scss for VR component animation and positioning variables.
+
+public/assets/css/nucleo-icons.css
+public/assets/css/nucleo-svg.css
+public/assets/css/soft-ui-dashboard.css
+public/assets/css/soft-ui-dashboard.css.map
+public/assets/css/soft-ui-dashboard.min.css
+public/assets/fonts/nucleo-icons.eot
+public/assets/fonts/nucleo-icons.svg
+public/assets/fonts/nucleo-icons.ttf
+public/assets/fonts/nucleo-icons.woff
+public/assets/fonts/nucleo-icons.woff2
+public/assets/fonts/nucleo.eot
+public/assets/fonts/nucleo.ttf
+public/assets/fonts/nucleo.woff
+public/assets/fonts/nucleo.woff2
+public/assets/img/apple-icon.png
+public/assets/img/bruce-mars.jpg
+public/assets/img/curved-images/curved0.jpg
+public/assets/img/curved-images/curved1.jpg
+public/assets/img/curved-images/curved14.jpg
+public/assets/img/curved-images/curved6.jpg
+public/assets/img/curved-images/curved8.jpg
+public/assets/img/curved-images/white-curved.jpeg
+public/assets/img/down-arrow-dark.svg
+public/assets/img/down-arrow.svg
+public/assets/img/favicon.png
+public/assets/img/home-decor-1.jpg
+public/assets/img/home-decor-2.jpg
+public/assets/img/home-decor-3.jpg
+public/assets/img/illustrations/rocket-white.png
+public/assets/img/ivana-square.jpg
+public/assets/img/ivancik.jpg
+public/assets/img/kal-visuals-square.jpg
+public/assets/img/logo-ct.png
+public/assets/img/logos/mastercard.png
+public/assets/img/logos/visa.png
+public/assets/img/marie.jpg
+public/assets/img/shapes/waves-white.svg
+public/assets/img/small-logos/icon-sun-cloud.png
+public/assets/img/small-logos/logo-atlassian.svg
+public/assets/img/small-logos/logo-invision.svg
+public/assets/img/small-logos/logo-jira.svg
+public/assets/img/small-logos/logo-slack.svg
+public/assets/img/small-logos/logo-spotify.svg
+public/assets/img/small-logos/logo-webdev.svg
+public/assets/img/small-logos/logo-xd.svg
+public/assets/img/team-1.jpg
+public/assets/img/team-2.jpg
+public/assets/img/team-3.jpg
+public/assets/img/team-4.jpg
+public/assets/img/vr-bg.jpg
+public/assets/js/core/bootstrap.min.js
+public/assets/js/core/popper.min.js
+public/assets/js/plugins/Chart.extension.js
+public/assets/js/plugins/bootstrap-notify.js
+public/assets/js/plugins/chartjs.min.js
+public/assets/js/plugins/choices.min.js
+public/assets/js/plugins/fullcalendar.min.js
+public/assets/js/plugins/perfect-scrollbar.min.js
+public/assets/js/plugins/smooth-scrollbar.min.js
+public/assets/js/soft-ui-dashboard.js
+public/assets/js/soft-ui-dashboard.js.map
+public/assets/js/soft-ui-dashboard.min.js
+public/assets/scss/soft-ui-dashboard.scss
+public/assets/scss/soft-ui-dashboard/_accordion.scss
+public/assets/scss/soft-ui-dashboard/_alert.scss
+public/assets/scss/soft-ui-dashboard/_avatars.scss
+public/assets/scss/soft-ui-dashboard/_backgrounds.scss
+public/assets/scss/soft-ui-dashboard/_badge.scss
+public/assets/scss/soft-ui-dashboard/_breadcrumbs.scss
+public/assets/scss/soft-ui-dashboard/_buttons.scss
+public/assets/scss/soft-ui-dashboard/_cards-extend.scss
+public/assets/scss/soft-ui-dashboard/_cards.scss
+public/assets/scss/soft-ui-dashboard/_components.scss
+public/assets/scss/soft-ui-dashboard/_dropdown-extend.scss
+public/assets/scss/soft-ui-dashboard/_dropdown.scss
+public/assets/scss/soft-ui-dashboard/_dropup.scss
+public/assets/scss/soft-ui-dashboard/_fixed-plugin.scss
+public/assets/scss/soft-ui-dashboard/_floating-elements.scss
+public/assets/scss/soft-ui-dashboard/_footer.scss
+public/assets/scss/soft-ui-dashboard/_forms.scss
+public/assets/scss/soft-ui-dashboard/_gradients.scss
+public/assets/scss/soft-ui-dashboard/_header.scss
+public/assets/scss/soft-ui-dashboard/_info-areas.scss
+public/assets/scss/soft-ui-dashboard/_list-check.scss
+public/assets/scss/soft-ui-dashboard/_misc-extend.scss
+public/assets/scss/soft-ui-dashboard/_misc.scss
+public/assets/scss/soft-ui-dashboard/_nav.scss
+public/assets/scss/soft-ui-dashboard/_navbar-vertical-extend.scss
+public/assets/scss/soft-ui-dashboard/_navbar-vertical.scss
+public/assets/scss/soft-ui-dashboard/_navbar.scss
+public/assets/scss/soft-ui-dashboard/_pagination.scss
+public/assets/scss/soft-ui-dashboard/_popovers.scss
+public/assets/scss/soft-ui-dashboard/_progress.scss
+public/assets/scss/soft-ui-dashboard/_rtl-extend.scss
+public/assets/scss/soft-ui-dashboard/_rtl.scss
+public/assets/scss/soft-ui-dashboard/_social-buttons.scss
+public/assets/scss/soft-ui-dashboard/_tables.scss
+public/assets/scss/soft-ui-dashboard/_tilt.scss
+public/assets/scss/soft-ui-dashboard/_timeline.scss
+public/assets/scss/soft-ui-dashboard/_tooltips.scss
+public/assets/scss/soft-ui-dashboard/_typography.scss
+public/assets/scss/soft-ui-dashboard/_utilities-extend.scss
+public/assets/scss/soft-ui-dashboard/_utilities.scss
+public/assets/scss/soft-ui-dashboard/_variables.scss
+public/assets/scss/soft-ui-dashboard/badges/_badge-circle.scss
+public/assets/scss/soft-ui-dashboard/badges/_badge-dot.scss
+public/assets/scss/soft-ui-dashboard/badges/_badge-floating.scss
+public/assets/scss/soft-ui-dashboard/badges/_badge.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_accordion.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_alert.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_badge.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_breadcrumb.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_button-group.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_buttons.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_card.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_carousel.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_close.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_containers.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_dropdown.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_forms.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_functions.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_grid.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_helpers.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_images.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_list-group.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_mixins.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_modal.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_nav.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_navbar.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_offcanvas.scss
+public/assets/scss/soft-ui-dashboard/bootstrap/_pagination.scss
+public/assets/scss/soft-

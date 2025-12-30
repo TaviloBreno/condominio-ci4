@@ -14,9 +14,9 @@
   <link href="<?= base_url('assets/css/nucleo-icons.css') ?>" rel="stylesheet" />
   <link href="<?= base_url('assets/css/nucleo-svg.css') ?>" rel="stylesheet" />
   <!-- Font Awesome Icons -->
-  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <!-- CSS Files -->
-  <link id="pagestyle" href="<?= base_url('assets/css/soft-ui-dashboard.css?v=1.0.3') ?>" rel="stylesheet" />
+  <link id="pagestyle" href="<?= base_url('assets/css/soft-ui-dashboard.min.css') ?>" rel="stylesheet" />
 
   <?= $this->renderSection('css') ?>
 </head>
@@ -37,7 +37,7 @@
         <li class="nav-item">
           <a class="nav-link <?= uri_string() === '' ? 'active' : '' ?>" href="<?= base_url() ?>">
             <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="fas fa-home text-dark"></i>
+              <i class="ni ni-shop text-dark text-sm opacity-10"></i>
             </div>
             <span class="nav-link-text ms-1">Dashboard</span>
           </a>
@@ -50,7 +50,7 @@
         <div class="full-background" style="background-image: url('<?= base_url('assets/img/curved-images/white-curved.jpeg') ?>')"></div>
         <div class="card-body text-start p-3 w-100">
           <div class="icon icon-shape icon-sm bg-white shadow text-center mb-3 d-flex align-items-center justify-content-center border-radius-md">
-            <i class="fas fa-question text-dark text-lg top-0" aria-hidden="true"></i>
+            <i class="ni ni-diamond text-dark text-gradient text-lg top-0" aria-hidden="true" id="sidenavCardIcon"></i>
           </div>
           <div class="docs-info">
             <h6 class="text-white up mb-0">Precisa de ajuda?</h6>
@@ -77,7 +77,7 @@
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
             <div class="input-group">
-              <span class="input-group-text text-body"><i class="fas fa-search" aria-hidden="true"></i></span>
+              <span class="input-group-text text-body"><i class="ni ni-zoom-split-in" aria-hidden="true"></i></span>
               <input type="text" class="form-control" placeholder="Pesquisar...">
             </div>
           </div>
@@ -85,13 +85,13 @@
             <?php if (auth()->loggedIn()): ?>
               <li class="nav-item dropdown pe-2 d-flex align-items-center">
                 <a href="javascript:;" class="nav-link text-body p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa fa-user me-sm-1"></i>
+                  <i class="ni ni-single-02 me-sm-1"></i>
                   <span class="d-sm-inline d-none"><?= auth()->user()->username ?></span>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton">
                   <li>
                     <a class="dropdown-item border-radius-md" href="<?= base_url('logout') ?>">
-                      <i class="fa fa-sign-out-alt me-2"></i> Sair
+                      <i class="ni ni-button-power me-2"></i> Sair
                     </a>
                   </li>
                 </ul>
@@ -99,7 +99,7 @@
             <?php else: ?>
               <li class="nav-item d-flex align-items-center">
                 <a href="<?= base_url('login') ?>" class="nav-link text-body font-weight-bold px-0">
-                  <i class="fa fa-user me-sm-1"></i>
+                  <i class="ni ni-single-02 me-sm-1"></i>
                   <span class="d-sm-inline d-none">Entrar</span>
                 </a>
               </li>
